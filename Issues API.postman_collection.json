@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "db4f43a4-93b1-44a3-8de0-310677ad0464",
+		"name": "Issues API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1403218",
+		"_collection_link": "https://bold-astronaut-313735.postman.co/workspace/REST-Server-Client~74e988fb-a9f2-4625-b345-c657edc95651/collection/1403218-db4f43a4-93b1-44a3-8de0-310677ad0464?action=share&creator=1403218&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Get Issue",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/issues/PB-2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"issues",
+						"PB-2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Issue",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n    \"id\": \"PB-3\",\n    \"title\": \"Bug chrome\",\n    \"description\": \"Font issue\"\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/issues",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"issues"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Issue",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n    \"id\": \"PB-2\",\n    \"title\": \"Bug chrome\",\n    \"description\": \"Font issue\"\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/issues/PB-2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"issues",
+						"PB-2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Issue",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/issues/PB-2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"issues",
+						"PB-2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

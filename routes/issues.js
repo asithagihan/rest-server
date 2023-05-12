@@ -15,20 +15,19 @@ router.get("/:id", function (req, res, next) {
 //POST create issue
 router.post("/", function (req, res, next) {
   console.log(req.body);
-  const issueId = `PB-${data.length + 1}`;
-  res.send({ id: issueId, msg: "successfully created" });
+  res.send({ id: req.body.id, msg: "successfully created" });
 });
 
 //PUT update issue
 router.put("/:id", function (req, res, next) {
   console.log(req.params.id, req.body);
-  res.send("successfully updated");
+  res.send({ id: req.params.id, msg: "successfully updated" });
 });
 
 //DELETE issue
 router.delete("/:id", function (req, res, next) {
   console.log(req.params.id);
-  res.send("successfully deleted");
+  res.send({ id: req.params.id, msg: "successfully deleted" });
 });
 
 module.exports = router;
